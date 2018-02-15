@@ -1,1 +1,128 @@
-<h1>Freedom of Words</h1>
+<!DOCTYPE html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: 'Dancing Script', cursive;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #1899;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(25,237,123,1);
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: rgba(12222,27,23,.5);
+  margin: 0px 0 70px 0;
+  font-size: 40px;
+}
+p {
+  color: rgba(122,227,25,1);
+  background: red;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(122,122,122,1), rgba(1222,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://vignette.wikia.nocookie.net/brickleberry/images/3/34/Yummy_lasagna.jpg/revision/latest?cb=20161104044724");
+}
+.second{
+  background-image: url("http://relish.com/wp-content/uploads/2017/03/Mac-N-Cheese-with-Honey-Bacon-670x405-1489186002.jpg");
+}
+.dessert{
+  background-image: url("https://assets.epicurious.com/photos/57a8a45db10b4fb03f234f34/2:1/w_1260%2Ch_630/southern-fried-chicken.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Gia's Diner</h1>
+<h2>Sweet & delicious!</h2>
+<div class="first">
+  <p>Lasagna <span class="price">$30</span><br />
+  <small>Spicy and cheezy. Come at to your heart content. cheep and sweet. eat more and more best diner to be. save the money and eat more. </small></p>
+</div>
+
+<div class="second">
+  <p>Mac&Cheese <span class="price">$25</span><br />
+  <small>
+  Cheezy and sweet. For someone thats kind and pretty. Come enjoy to your heart content. Open day and night. Also special delivery</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Fried Chicken. Yeah thats right. Eat eveyday keeps the docs away. Best resturant best food what a nice place for a nicde person. <span class="price">$8</span><br />
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+
